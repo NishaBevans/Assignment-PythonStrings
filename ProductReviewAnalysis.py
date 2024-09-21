@@ -1,4 +1,6 @@
-#Task 1: Keyword Highlighter
+#Task 1: Keyword Highlighter: Write a program that searches through reviews list and looks for keywords such as "good", "excellent", 
+#"bad", "poor", and "average". We want you to capitalize those keywords then print out each review. Print out each review with the keywords 
+#in uppercase so they stand out.
 
 def highlight_keywords(reviews, keywords):
     highlighted_reviews = []
@@ -29,7 +31,8 @@ highlighted_reviews = highlight_keywords(reviews, keywords)
 for review in highlighted_reviews:
     print(review)
 
-#Task 2: Sentiment Tally
+#Task 2: Sentiment Tally: Develop a function that tallies the number of positive and negative words in each review.  The function should return 
+#the total count of positive and negative words.
 
 def tally_sentiment(reviews):
     positive = ["good", "excellent", "great", "awesome", "fantastic", "superb", "amazing"]  
@@ -59,7 +62,8 @@ positive_count, negative_count = tally_sentiment(reviews)
 print(f"Total positive remarks: {positive_count}")
 print(f"Total negative remarks: {negative_count}")
 
-#Task 3: Review Summary
+#Task 3: Review Summary: Implement a script that takes the first 30 characters of a review and appends "…" to create a summary. 
+#Ensure that the summary does not cut off in the middle of a word.
 
 reviews_copy = [
         "This product is really good. I'm impressed with its quality.",
